@@ -39,6 +39,11 @@
                 android:resource="@xml/syncadapter" />
         </service>
 
+        <provider
+            android:authorities="org.hisp.dhis.provider"
+            android:exported="true"
+            android:name="org.hisp.dhis.client.sdk.android.api.persistence.DbDhis_Provider"/>
+
     </application>
 
 </manifest>
